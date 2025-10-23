@@ -42,13 +42,19 @@ life-and-works-of-rizal/
 ```bash
 mkdir my-rizal-website
 cd my-rizal-website
+```
 
+```bash
 2. Clone the repository into that folder:
 git clone https://github.com/YOUR_USERNAME/life-and-works-of-rizal.git
+```
 
+```bash
 3. Navigate to the project folder:
 cd life-and-works-of-rizal
+```
 
+```bash
 4. Open index.html in your browser to view the website.
-
+```
 
