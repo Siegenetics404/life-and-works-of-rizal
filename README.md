@@ -17,8 +17,8 @@ A responsive website about Jose Rizal, featuring sections like Biography, Works 
 ---
 
 ## Project Structure
-
-life-and-works-of-rizal/ 
+```plaintext
+life-and-works-of-rizal/
 ├─ index.html
 ├─ biography.html
 ├─ works-writings.html
@@ -32,7 +32,7 @@ life-and-works-of-rizal/
 └─ assets/
 ├─ images/
 └─ fonts/
-
+```
 ---
 
 ## How to Run Locally
