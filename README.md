@@ -19,19 +19,25 @@ A responsive website about Jose Rizal, featuring sections like Biography, Works 
 ## Project Structure
 ```plaintext
 life-and-works-of-rizal/
-├─ index.html
-├─ biography.html
-├─ works-writings.html
-├─ rizal-law.html
-├─ gallery.html
+├─ assets/
+│  ├─ css/
+│  │  ├─ responsive.css
+│  │  └─ style.css
+│  ├─ imgs/
+│  │  ├─ gallery/
+│  │  └─ students/
+│  └─ js/
+│     ├─ include.js
+│     └─ script.js
+├─ components/
+│  ├─ header.html
+│  └─ footer.html
 ├─ about.html
-├─ css/
-│ └─ style.css
-├─ js/
-│ └─ script.js
-└─ assets/
-├─ images/
-└─ fonts/
+├─ biography.html
+├─ gallery.html
+├─ index.html
+├─ rizal-law.html
+└─ works-writings.html
 ```
 ---
 
