@@ -22,16 +22,67 @@
     <div data-include="components/header.html"></div>
 
     <!-- main section with header offset -->
-    <main
-      class="pt-20 min-h-[calc(100vh-5rem)] flex items-center justify-center"
-    >
-      <section class="text-center">
-        <h1 class="text-4xl font-['Playfair_Display'] text-[#1B4332]">
-          Welcome to Rizal’s Life and Works
-        </h1>
-        <p class="mt-4 text-[#555555] max-w-xl mx-auto">
-          Explore the legacy, writings, and influence of the national hero of
-          the Philippines.
+    <main class="pt-20">
+      <!-- banner section -->
+      <section
+        class="relative h-[calc(100vh-5rem)] flex flex-col justify-center bg-center bg-cover px-8 md:px-20"
+        style="
+          background-image: url('assets/imgs/banner/hero-banner.webp');
+          background-size: cover;
+          background-position: center 40%;
+        "
+      >
+        <!-- overlays -->
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 bg-[#1b4332]/40"></div>
+
+        <div
+          class="relative z-10 text-[#FBF8F3] flex flex-col justify-end gap-12 md:gap-16 mb-[-3rem] md:mb-[-5rem]"
+        >
+          <!-- left content -->
+          <div class="max-w-3xl text-left">
+            <h1
+              class="text-5xl md:text-6xl font-['Playfair_Display'] font-semibold leading-tight mb-6"
+            >
+              Dr. Jose Rizal:
+              <br />
+              <span
+                class="text-[#FBF8F3]"
+                style="text-shadow: 1px 1px 6px #d4af37"
+              >
+                The Heart of Philippine Nationalism
+              </span>
+            </h1>
+
+            <!-- explore button -->
+            <a
+              href="biography.html"
+              class="inline-block bg-[#D4AF37] text-[#1B4332] font-semibold text-lg px-8 py-3 rounded-full shadow-md hover:bg-[#c49b2e] transition-all duration-300"
+            >
+              Explore His Life
+            </a>
+          </div>
+
+          <!-- right paragraph (below on all screens) -->
+          <div
+            class="max-w-md self-end text-right text-[#E6E6E6]/90 italic text-sm md:text-base"
+          >
+            <p>
+              A scholar, writer, and revolutionary who fought for Philippine
+              independence through words and intellect. His life and works
+              continue to inspire generations of Filipinos and scholars
+              worldwide.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- placeholder section -->
+      <section class="py-20 text-center text-[#2C2C2C]">
+        <p
+          class="text-lg md:text-xl font-medium italic text-[#1B4332]/70 border border-dashed border-[#D4A017]/40 rounded-lg max-w-2xl mx-auto py-10 bg-[#FBF8F3]"
+        >
+          Mineee ni — <span class="text-[#D4A017]">Siege</span>
         </p>
       </section>
     </main>
