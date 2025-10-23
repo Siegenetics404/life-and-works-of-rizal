@@ -38,23 +38,43 @@ life-and-works-of-rizal/
 ## How to Run Locally
 
 1. Create a folder on your computer where you want the project to be:
-
 ```bash
 mkdir my-rizal-website
 cd my-rizal-website
 ```
 
-```bash
 2. Clone the repository into that folder:
+ ```bash
 git clone https://github.com/YOUR_USERNAME/life-and-works-of-rizal.git
 ```
 
-```bash
 3. Navigate to the project folder:
+```bash
 cd life-and-works-of-rizal
 ```
 
-```bash
 4. Open index.html in your browser to view the website.
+
+## Contributing
+
+If you want to contribute, follow these steps:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature:
+```bash
+git checkout -b feature/your-feature
 ```
+
+3. Make your changes and commit:
+```bash
+git commit -m "Add your feature"
+```
+
+4. Push to your branch:
+```bash
+git push origin your-branch-name/your-feature
+```
+
+5. Open a Pull Request on the main repository.
 
