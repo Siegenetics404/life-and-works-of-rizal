@@ -18,7 +18,7 @@ A responsive website about Jose Rizal, featuring sections like Biography, Works 
 
 ## Project Structure
 
-life-and-works-of-rizal/
+life-and-works-of-rizal/ 
 ├─ index.html
 ├─ biography.html
 ├─ works-writings.html
