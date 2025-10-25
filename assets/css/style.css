@@ -47,3 +47,10 @@ ul:hover .nav-link.active::after {
     transform: translateY(0);
   }
 }
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.perspective-[1000px] {
+  perspective: 1000px;
+}

@@ -3,27 +3,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rizal’s Life and Works | Homepage</title>
-    <!-- tw cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- box icon -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
   <body class="bg-[#FBF8F3] font-['Lora']">
     <!-- include header -->
     <div data-include="components/header.html"></div>
 
-    <!-- main section with header offset -->
     <main class="pt-20">
-      <!-- banner section -->
       <section
         class="relative h-[calc(100vh-5rem)] flex flex-col justify-center bg-center bg-cover px-8 md:px-20"
         style="
@@ -32,14 +28,12 @@
           background-position: center 40%;
         "
       >
-        <!-- overlays -->
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="absolute inset-0 bg-[#1b4332]/40"></div>
 
         <div
           class="relative z-10 text-[#FBF8F3] flex flex-col justify-end gap-12 md:gap-16 mb-[-3rem] md:mb-[-5rem]"
         >
-          <!-- left content -->
           <div class="max-w-3xl text-left">
             <h1
               class="text-5xl md:text-6xl font-['Playfair_Display'] font-semibold leading-tight mb-6"
@@ -54,7 +48,6 @@
               </span>
             </h1>
 
-            <!-- explore button -->
             <a
               href="biography.html"
               class="inline-block bg-[#D4AF37] text-[#1B4332] font-semibold text-lg px-8 py-3 rounded-full shadow-md hover:bg-[#c49b2e] transition-all duration-300"
@@ -63,7 +56,6 @@
             </a>
           </div>
 
-          <!-- right paragraph (below on all screens) -->
           <div
             class="max-w-md self-end text-right text-[#E6E6E6]/90 italic text-sm md:text-base"
           >
@@ -77,20 +69,251 @@
         </div>
       </section>
 
-      <!-- placeholder section -->
-      <section class="py-20 text-center text-[#2C2C2C]">
-        <p
-          class="text-lg md:text-xl font-medium italic text-[#1B4332]/70 border border-dashed border-[#D4A017]/40 rounded-lg max-w-2xl mx-auto py-10 bg-[#FBF8F3]"
+      <section class="py-20 bg-[#FBF8F3] text-center px-6 md:px-16">
+        <h2
+          class="text-4xl font-['Playfair_Display'] font-semibold text-[#1B4332] mb-6"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
-          Mineee ni — <span class="text-[#D4A017]">Siege</span>
+          Discover the Legacy of the National Hero
+        </h2>
+        <p
+          class="max-w-3xl mx-auto text-lg text-[#2C2C2C]/80 leading-relaxed"
+          data-aos="fade-up-right"
+          data-aos-delay="200"
+        >
+          This website explores the extraordinary life and works of
+          <span class="text-[#1B4332] font-semibold">Dr. José Rizal</span> — his
+          journey, writings, and influence that ignited the spirit of Philippine
+          nationalism. Dive into his biography, read his literary masterpieces,
+          and understand how his ideals shaped the nation.
         </p>
+      </section>
+
+      <section class="py-20 bg-[#f5f5f1] text-center px-6 md:px-20">
+        <h2
+          class="text-4xl font-['Playfair_Display'] font-semibold text-[#1B4332] mb-3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Explore & Learn
+        </h2>
+        <p
+          class="text-[#2C2C2C]/80 mb-12 text-lg"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Discover different aspects of Rizal's life and legacy
+        </p>
+
+        <div
+          class="grid gap-10 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <a
+            href="biography.html"
+            class="block rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-[#FBF8F3] text-[#1B4332]"
+          >
+            <div
+              class="bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] w-14 h-14 flex items-center justify-center rounded-xl mx-auto mb-5 shadow-lg"
+            >
+              <i class="bx bx-user text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold font-['Playfair_Display'] mb-3">
+              Biography
+            </h3>
+            <p class="text-[#2C2C2C]/80 text-sm leading-relaxed">
+              Explore the remarkable life journey of Dr. José Rizal from
+              childhood to martyrdom.
+            </p>
+          </a>
+
+          <a
+            href="works-writings.html"
+            class="block rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-[#FBF8F3] text-[#1B4332]"
+          >
+            <div
+              class="bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] w-14 h-14 flex items-center justify-center rounded-xl mx-auto mb-5 shadow-lg"
+            >
+              <i class="bx bx-book-content text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold font-['Playfair_Display'] mb-3">
+              Works & Writings
+            </h3>
+            <p class="text-[#2C2C2C]/80 text-sm leading-relaxed">
+              Discover his literary masterpieces that sparked a revolution and
+              inspired a nation.
+            </p>
+          </a>
+
+          <a
+            href="gallery.html"
+            class="block rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-[#FBF8F3] text-[#1B4332]"
+          >
+            <div
+              class="bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] w-14 h-14 flex items-center justify-center rounded-xl mx-auto mb-5 shadow-lg"
+            >
+              <i class="bx bx-photo-album text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold font-['Playfair_Display'] mb-3">
+              Gallery
+            </h3>
+            <p class="text-[#2C2C2C]/80 text-sm leading-relaxed">
+              View historical photographs, monuments, and sites dedicated to our
+              national hero.
+            </p>
+          </a>
+
+          <a
+            href="rizal-law.html"
+            class="block rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-[#FBF8F3] text-[#1B4332]"
+          >
+            <div
+              class="bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] w-14 h-14 flex items-center justify-center rounded-xl mx-auto mb-5 shadow-lg"
+            >
+              <i class="bx bx-detail text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold font-['Playfair_Display'] mb-3">
+              Rizal Law & Legacy
+            </h3>
+            <p class="text-[#2C2C2C]/80 text-sm leading-relaxed">
+              Learn about Republic Act No. 1425 and Rizal’s continuing influence
+              on Philippine society.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section class="py-20 bg-[#FBF8F3] text-center px-6 md:px-20">
+        <h2
+          class="text-4xl font-['Playfair_Display'] font-semibold text-[#1B4332] mb-3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Words of Wisdom
+        </h2>
+        <p
+          class="text-[#2C2C2C]/70 mb-12 text-lg"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Timeless quotes from Dr. José Rizal
+        </p>
+
+        <div
+          class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto perspective-[1000px]"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <div
+            class="group [transform-style:preserve-3d] relative h-64 transition-transform duration-700 hover:[transform:rotateY(180deg)]"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] rounded-2xl p-8 text-left text-[#FBF8F3] shadow-lg flex flex-col justify-between backface-hidden"
+            >
+              <div>
+                <div class="text-[#D4AF37] text-3xl font-bold mb-3">"</div>
+                <p class="italic text-lg leading-relaxed">
+                  The youth is the hope of our future.
+                </p>
+              </div>
+              <p
+                class="text-sm text-[#E6E6E6]/70 mt-6 border-t border-[#E6E6E6]/20 pt-3"
+              >
+                On education and national growth
+              </p>
+            </div>
+
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#40916C] via-[#2D6A4F] to-[#1B4332] rounded-2xl p-8 text-left text-[#FBF8F3] shadow-lg flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden"
+            >
+              <p class="italic text-lg leading-relaxed mb-3">
+                <span class="text-[#D4AF37]"> " </span>Ang kabataan ang pag-asa
+                ng bayan.<span class="text-[#D4AF37]"> " </span>
+              </p>
+              <p class="text-sm text-[#E6E6E6]/70">
+                Mula sa kanyang mga sulatin
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group [transform-style:preserve-3d] relative h-64 transition-transform duration-700 hover:[transform:rotateY(180deg)]"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] rounded-2xl p-8 text-left text-[#FBF8F3] shadow-lg flex flex-col justify-between backface-hidden"
+            >
+              <div>
+                <div class="text-[#D4AF37] text-3xl font-bold mb-3">"</div>
+                <p class="italic text-lg leading-relaxed">
+                  He who does not love his own language is worse than an animal
+                  and smelly fish.
+                </p>
+              </div>
+              <p
+                class="text-sm text-[#E6E6E6]/70 mt-6 border-t border-[#E6E6E6]/20 pt-3"
+              >
+                Emphasizing the importance of national identity
+              </p>
+            </div>
+
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#40916C] via-[#2D6A4F] to-[#1B4332] rounded-2xl p-8 text-left text-[#FBF8F3] shadow-lg flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden"
+            >
+              <p class="italic text-lg leading-relaxed mb-3">
+                <span class="text-[#D4AF37]"> " </span>Ang hindi marunong
+                magmahal sa sariling wika ay higit pa sa hayop at malansang
+                isda.<span class="text-[#D4AF37]"> " </span>
+              </p>
+              <p class="text-sm text-[#E6E6E6]/70">
+                Mula sa kanyang tula at aral
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group [transform-style:preserve-3d] relative h-64 transition-transform duration-700 hover:[transform:rotateY(180deg)]"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] rounded-2xl p-8 text-left text-[#FBF8F3] shadow-lg flex flex-col justify-between backface-hidden"
+            >
+              <div>
+                <div class="text-[#D4AF37] text-3xl font-bold mb-3">"</div>
+                <p class="italic text-lg leading-relaxed">
+                  To foretell the destiny of a nation, it is necessary to open
+                  the book that tells of her past.
+                </p>
+              </div>
+              <p
+                class="text-sm text-[#E6E6E6]/70 mt-6 border-t border-[#E6E6E6]/20 pt-3"
+              >
+                On the importance of understanding history
+              </p>
+            </div>
+
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#40916C] via-[#2D6A4F] to-[#1B4332] rounded-2xl p-8 text-left text-[#FBF8F3] shadow-lg flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] backface-hidden"
+            >
+              <p class="italic text-lg leading-relaxed mb-3">
+                <span class="text-[#D4AF37]"> " </span>Upang mahulaan ang
+                kapalaran ng isang bayan, buksan ang aklat ng kanyang
+                nakaraan.<span class="text-[#D4AF37]"> " </span>
+              </p>
+              <p class="text-sm text-[#E6E6E6]/70">
+                Mula sa kanyang mga pananalita
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <!-- include footer -->
+    <!-- include footerr -->
     <div data-include="components/footer.html"></div>
 
-    <!-- script -->
     <script src="assets/js/include.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
