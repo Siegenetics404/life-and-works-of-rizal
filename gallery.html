@@ -2,12 +2,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.ico" />
-    <link
-      rel="shortcut icon"
-      href="assets/imgs/logo/favicon.ico"
-      type="image/x-icon"
-    />
     <title>Rizal’s Life and Works | Gallery</title>
     <!-- tw cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,7 +15,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/gallery.css" rel="stylesheet">
   </head>
   <body class="bg-[#FBF8F3] font-['Lora']">
     <!-- include header -->
@@ -54,19 +49,39 @@
         </div>
       </section>
 
-      <!-- placeholder section -->
-      <section class="py-20 text-center text-[#2C2C2C]">
-        <p
-          class="text-lg md:text-xl font-medium italic text-[#1B4332]/70 border border-dashed border-[#D4A017]/40 rounded-lg max-w-2xl mx-auto py-10 bg-[#FBF8F3]"
-        >
-          Add your content here — <span class="text-[#D4A017]">Siege</span>
-        </p>
+     <!-- Start of the gallery section -->
+      <section class="py-20 px-6 sm:px-10 lg:px-20 mx-auto text-center text-[#2C2C2C]">
+        <!-- Title and description -->
+        <div class="mb-12">
+          <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
+            Historical Moments & Monuments
+          </h1>
+          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Explore photographs, monuments, and historical sites preserved through time.
+          </p>
+        </div>
+
+        <!-- Gallery container -->
+        <div
+          id="gallery-container"
+          class="py-2 columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 max-w-10xl mx-auto px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
+        </div>
+      </section>
+
+      <!-- Story panel (for selected card) -->
+      <section id="story-panel" class="mt-10 bg-white rounded-2xl p-6 shadow-sm">
+        <h2 class="text-xl font-medium">Quick Recap</h2>
+        <p id="story-text" class="mt-2 text-gray-700">Click a picture to read a slightly longer story and see the image enlarged.</p>
       </section>
     </main>
 
+    <!-- Modal (hidden by default) -->
+    <div id="modal-container"></div>
+    <script src="/assets/js/modal.js"></script>
+    <script src="assets/js/gallery.js"></script>
+
     <!-- include footer -->
     <div data-include="components/footer.html"></div>
-
     <!-- script -->
     <script src="assets/js/include.js"></script>
   </body>

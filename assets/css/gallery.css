@@ -1,0 +1,23 @@
+/* Small custom styles for a masonry-like gallery using CSS columns */
+.masonry {
+  column-gap: 1rem;
+}
+/* Each card becomes a column-span item inside columns */
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1rem;
+  break-inside: avoid;
+}
+/* Simple fade for modal */
+.modal-backdrop {
+  transition: opacity 0.18s ease;
+}
+
+.masonry img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+
