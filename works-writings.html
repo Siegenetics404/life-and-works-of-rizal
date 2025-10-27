@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/works-writings.css" rel="stylesheet" />
   </head>
   <body class="bg-[#FBF8F3] font-['Lora']">
     <!-- include header -->
@@ -52,13 +53,113 @@
         </div>
       </section>
 
-      <!-- placeholder section -->
+      <!-- Content section -->
       <section class="py-20 text-center text-[#2C2C2C]">
-        <p
-          class="text-lg md:text-xl font-medium italic text-[#1B4332]/70 border border-dashed border-[#D4A017]/40 rounded-lg max-w-2xl mx-auto py-10 bg-[#FBF8F3]"
-        >
-          Add your content here — <span class="text-[#D4A017]">Siege</span>
-        </p>
+        <div class="mb-12">
+          <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
+            Major Literary Works
+          </h1>
+          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Rizal's writings were powerful weapons against colonial oppression.
+            Through his novels, poems, and essays, he exposed injustices and
+            inspired Filipinos to fight for their rights and dignity.
+          </p>
+        </div>
+
+        <div class="max-w-6xl mx-auto py-12 space-y-16">
+          <!-- Noli Me Tangere -->
+          <div
+            class="fade-in grid grid-cols-1 md:grid-cols-2 gap-10 items-center card-hover rounded-2xl overflow-hidden"
+          >
+            <img
+              src="assets/works_writings/placeholder-image.jpg"
+              alt="Noli Me Tangere"
+              class="w-full h-80 object-cover rounded-2xl shadow-md"
+            />
+
+            <div class="bg-white rounded-2xl shadow-md p-8 text-left">
+              <span
+                class="bg-[#D4A017]/20 text-[#1B4332] text-sm px-3 py-1 rounded-full font-semibold"
+              >
+                1887
+              </span>
+              <h3
+                class="text-3xl font-['Playfair_Display'] font-bold text-[#1B4332] mt-3"
+              >
+                Noli Me Tangere
+              </h3>
+              <p class="italic text-[#2E5339]/80 mb-4">Touch Me Not</p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Rizal’s first novel exposed the corruption and abuses of the
+                Spanish colonial government and the Catholic Church in the
+                Philippines. Written in Spanish, it tells the story of
+                Crisostomo Ibarra and his quest for reform.
+              </p>
+
+              <div class="bg-[#F3F3F3] p-3 mt-5 rounded-lg">
+                <h4 class="font-semibold text-[#1B4332] text-sm">Impact</h4>
+                <p class="text-xs text-gray-700 mt-1">
+                  This groundbreaking work awakened Filipino nationalism and is
+                  considered one of the most important novels in Philippine
+                  literature.
+                </p>
+              </div>
+
+              <button
+                class="card-btn mt-6 bg-[#1B4332] text-white px-6 py-2 rounded-full text-sm w-fit"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <!-- El Filibusterismo -->
+          <div
+            class="fade-in grid grid-cols-1 md:grid-cols-2 gap-10 items-center card-hover rounded-2xl overflow-hidden"
+          >
+            <div
+              class="bg-white rounded-2xl shadow-md p-8 text-left order-2 md:order-1"
+            >
+              <span
+                class="bg-[#D4A017]/20 text-[#1B4332] text-sm px-3 py-1 rounded-full font-semibold"
+              >
+                1891
+              </span>
+              <h3
+                class="text-3xl font-['Playfair_Display'] font-bold text-[#1B4332] mt-3"
+              >
+                El Filibusterismo
+              </h3>
+              <p class="italic text-[#2E5339]/80 mb-4">The Reign of Greed</p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The sequel to Noli Me Tangere presents a darker, more
+                revolutionary tone. It follows Simoun, the alter ego of Ibarra,
+                as he plots revenge against the corrupt Spanish system.
+              </p>
+
+              <div class="bg-[#F3F3F3] p-3 mt-5 rounded-lg">
+                <h4 class="font-semibold text-[#1B4332] text-sm">Impact</h4>
+                <p class="text-xs text-gray-700 mt-1">
+                  This novel reflected Rizal’s growing disillusionment with
+                  peaceful reform and foreshadowed the coming Philippine
+                  Revolution.
+                </p>
+              </div>
+
+              <button
+                class="card-btn mt-6 bg-[#1B4332] text-white px-6 py-2 rounded-full text-sm w-fit"
+              >
+                Read More
+              </button>
+            </div>
+
+            <img
+              src="assets/works_writings/placeholder-image.jpg"
+              alt="El Filibusterismo"
+              class="w-full h-80 object-cover rounded-2xl shadow-md order-1 md:order-2"
+            />
+          </div>
+        </div>
       </section>
     </main>
 
@@ -67,5 +168,6 @@
 
     <!-- script -->
     <script src="assets/js/include.js"></script>
+    <script src="assets/js/works-writings.js"></script>
   </body>
 </html>
