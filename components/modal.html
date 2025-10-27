@@ -1,0 +1,35 @@
+<div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+  <div id="backdrop" class="absolute inset-0 bg-black opacity-50"></div>
+
+  <div class="relative w-full max-w-3xl mx-auto bg-[#1b4332]/90 rounded-2xl shadow-xl overflow-hidden">
+    <!-- Header -->
+    <div class="flex items-start justify-between p-4 border-b border-white mb-3">
+      <h3 id="modal-title" class="text-lg font-semibold text-white"></h3>
+      <button id="modal-close" class="text-white hover:text-[#D4A017]">CLOSE</button>
+    </div>
+
+    <!-- Image -->
+    <div id="modal-img-wrapper" class="flex justify-center max-h-[70vh] overflow-hidden">
+        <img id="modal-img" src="" alt="" class="w-11/12 h-auto object-contain rounded-xl shadow-lg">
+    </div>
+
+    <!-- Video -->
+    <div id="modal-video-wrapper" class="hidden flex flex-col justify-center items-center overflow-hidden">
+    <p id="video-loading" class="text-white mb-3 hidden">Please wait, video is loading...</p>
+    <iframe
+        id="modal-video"
+        class="w-11/12 h-auto aspect-video rounded-xl shadow-lg"
+        src=""
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+        loading="lazy">
+    </iframe>
+    </div>
+
+    <!-- Description -->
+    <div class="p-4">
+      <p id="modal-desc" class="text-white"></p>
+    </div>
+  </div>
+</div>
