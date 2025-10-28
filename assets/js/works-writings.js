@@ -1,18 +1,23 @@
-// Fade-in scroll
-document.addEventListener("DOMContentLoaded", () => {
-  const fadeEls = document.querySelectorAll(".fade-in");
+// Fade-in and fade-out on scroll
+const faders = document.querySelectorAll(".fade-in");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
+const appearOptions = {
+  threshold: 0.2,
+  rootMargin: "0px 0px -50px 0px",
+};
 
-  fadeEls.forEach((el) => observer.observe(el));
+const appearOnScroll = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // When in view → fade in
+      entry.target.classList.add("visible");
+    } else {
+      // When out of view → fade out
+      entry.target.classList.remove("visible");
+    }
+  });
+}, appearOptions);
+
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
 });
