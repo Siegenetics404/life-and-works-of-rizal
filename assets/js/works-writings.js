@@ -9,10 +9,8 @@ const appearOptions = {
 const appearOnScroll = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // When in view → fade in
       entry.target.classList.add("visible");
     } else {
-      // When out of view → fade out
       entry.target.classList.remove("visible");
     }
   });
