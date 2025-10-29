@@ -1,4 +1,4 @@
-<html lang="en">
+ <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +15,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link href="/assets/css/style.css" rel="stylesheet" />
-    <link href="/assets/css/gallery.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/gallery.css" rel="stylesheet">
   </head>
   <body class="bg-[#FBF8F3] font-['Lora']">
     <!-- include header -->
@@ -25,7 +25,7 @@
     <!-- main section with header offset -->
     <main class="pt-20 min-h-[calc(100vh-5rem)]">
       <!-- banner section -->
-      <section
+      <section 
         class="relative h-[50vh] flex items-center justify-center bg-center bg-cover"
         style="
           background-image: url('assets/imgs/banner/gallery-banner.webp');
@@ -49,9 +49,8 @@
         </div>
       </section>
 
-     <!-- Start of the gallery section -->
-      <section class="py-20 px-6 sm:px-10 lg:px-20 mx-auto text-center text-[#2C2C2C]">
-        <!-- Title and description -->
+      <!-- Rizal introduction -->
+      <section id="historical" class="py-20 px-6 sm:px-10 lg:px-20 mx-auto text-center text-[#2C2C2C]">
         <div class="mb-12">
           <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
             Historical Moments & Monuments
@@ -60,11 +59,130 @@
             Explore photographs, monuments, and historical sites preserved through time.
           </p>
         </div>
-
-        <!-- Gallery container -->
         <div
           id="gallery-container"
-          class="py-2 columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 max-w-10xl mx-auto px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
+          class="grid justify-center gap-6 max-w-7xl mx-auto"
+          style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        </div>
+      </section>
+
+      <!-- Family of Rizal Section -->
+      <section id="family" class="py-20 px-6 sm:px-10 lg:px-20 mx-auto text-center text-[#2C2C2C]">
+        <div class="mb-12">
+          <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
+            Family of Rizal
+          </h1>
+          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Discover the roots of the national hero — his parents, siblings, and the values that shaped his life.
+          </p>
+        </div>
+        <div
+          id="family-gallery-container"
+          class="grid justify-center gap-6 max-w-7xl mx-auto"
+          style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        </div>
+        <!-- siblings-gallery-container -->
+        <div
+          id="siblings-gallery-container"
+          class="grid justify-center gap-6 max-w-7xl mx-auto mt-6"
+          style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); justify-content: center;">
+        </div>
+
+        <div class="my-12">
+          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Extended Family 
+          </p>
+        </div>
+
+        <div
+          id="extended-family"
+          class="grid justify-center gap-6 max-w-7xl mx-auto mt-6"
+          style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        </div>
+      </section>
+
+      <!-- Romantic Relationship -->
+      <section id="romantic" class="py-20 px-6 sm:px-10 lg:px-20 mx-auto text-center text-[#2C2C2C]">
+        <div class="mb-12">
+          <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
+            Romantic Relationships
+          </h1>
+          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Explore photographs, monuments, and historical sites preserved through time.
+          </p>
+        </div>
+        <div
+          id="romantic-relationship"
+          class="grid justify-center gap-6 max-w-7xl mx-auto"
+          style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        </div>
+      </section>
+
+      <!-- Foreighn Encounters -->
+      <section id="encounters" class="py-20 px-6 sm:px-10 lg:px-20 mx-auto text-center text-[#2C2C2C]">
+        <div class="mb-12">
+          <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
+            Foreign Encounters and Schollars
+          </h1>
+          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Explore photographs, monuments, and historical sites preserved through time.
+          </p>
+        </div>
+        <div
+          id="Encounters"
+          class="grid justify-center gap-6 max-w-7xl mx-auto"
+          style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        </div>
+      </section>
+
+      <!-- Teachers and Mentors -->
+      <section id="teachers" class="py-20 px-6 sm:px-10 lg:px-20 mx-auto text-center text-[#2C2C2C]">
+        <div class="mb-12">
+          <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
+            Teachers & Mentors
+          </h1>
+          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Explore photographs, monuments, and historical sites preserved through time.
+          </p>
+        </div>
+        <div
+          id="teacher-mentor"
+          class="grid justify-center gap-6 max-w-7xl mx-auto"
+          style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        </div>
+      </section>
+
+      <!-- Friends and allies -->
+      <section id="allies" class="py-20 px-6 sm:px-10 lg:px-20 mx-auto text-center text-[#2C2C2C]">
+        <div class="mb-12">
+          <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
+            Friends & Allies
+          </h1>
+          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Explore photographs, monuments, and historical sites preserved through time.
+          </p>
+        </div>
+        <div
+          id="Allies"
+          class="grid justify-center gap-6 max-w-7xl mx-auto"
+          style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        </div>
+      </section>
+
+      <!-- Enemies and Oppressors -->
+      <section id="enemies" class="py-20 px-6 sm:px-10 lg:px-20 mx-auto text-center text-[#2C2C2C]">
+        <div class="mb-12">
+          <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
+            Friends & Allies
+          </h1>
+          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Explore photographs, monuments, and historical sites preserved through time.
+          </p>
+        </div>
+        <div
+          id="Enemies"
+          class="grid justify-center gap-6 max-w-7xl mx-auto"
+          style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
         </div>
       </section>
 
@@ -77,12 +195,26 @@
 
     <!-- Modal (hidden by default) -->
     <div id="modal-container"></div>
-    <script src="/assets/js/modal.js"></script>
+    <script src="/life-and-works-of-rizal-Pat/assets/js/modal.js"></script>
     <script src="assets/js/gallery.js"></script>
 
     <!-- include footer -->
     <div data-include="components/footer.html"></div>
     <!-- script -->
     <script src="assets/js/include.js"></script>
+    <script type="module" src="assets/js/modal.js"></script>
   </body>
+  <!-- Nav Bar Section side bar -->
+  <nav id="timeline-nav"
+    class="fixed left-6 top-1/2 z-50 hidden lg:flex flex-col gap-3 rounded-2xl bg-[#FBF8F3]/20 border border-white/30 transition-all duration-700 ease-in-out opacity-0 -translate-x-24 -translate-y-1/2">
+    <a href="#historical" class="timeline-link text-gray-300 hover:text-white transition-all duration-300 px-3 py-1 rounded-lg">Historical</a>
+    <a href="#family" class="timeline-link text-gray-300 hover:text-white transition-all duration-300 px-3 py-1 rounded-lg">Family</a>
+    <a href="#romantic" class="timeline-link text-gray-300 hover:text-white transition-all duration-300 px-3 py-1 rounded-lg">Romance</a>
+    <a href="#encounters" class="timeline-link text-gray-300 hover:text-white transition-all duration-300 px-3 py-1 rounded-lg">Encounters</a>
+    <a href="#teachers" class="timeline-link text-gray-300 hover:text-white transition-all duration-300 px-3 py-1 rounded-lg">Teachers</a>
+    <a href="#allies" class="timeline-link text-gray-300 hover:text-white transition-all duration-300 px-3 py-1 rounded-lg">Allies</a>
+    <a href="#enemies" class="timeline-link text-gray-300 hover:text-white transition-all duration-300 px-3 py-1 rounded-lg">Enemies</a>
+  </nav>
+
+<script src="assets/js/timeline.js"></script>
 </html>
