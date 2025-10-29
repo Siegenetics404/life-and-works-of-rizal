@@ -9,34 +9,28 @@
       type="image/x-icon"
     />
     <title>Rizal’s Life and Works | Rizal Law</title>
-    <!-- tw cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- box icon -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
   <body class="bg-[#FBF8F3] font-['Lora']">
-    <!-- include header -->
     <div data-include="components/header.html"></div>
 
-    <!-- main section with header offset -->
     <main class="pt-20 min-h-[calc(100vh-5rem)]">
-      <!-- banner section -->
       <section
         class="relative h-[50vh] flex items-center justify-center bg-center bg-cover"
         style="
           background-image: url('assets/imgs/banner/rizal-law-banner.webp');
         "
       >
-        <!-- black + green overlay -->
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="absolute inset-0 bg-[#1b4332]/40"></div>
 
@@ -52,12 +46,357 @@
         </div>
       </section>
 
-      <!-- placeholder section -->
-      <section class="py-20 text-center text-[#2C2C2C]">
-        <p
-          class="text-lg md:text-xl font-medium italic text-[#1B4332]/70 border border-dashed border-[#D4A017]/40 rounded-lg max-w-2xl mx-auto py-10 bg-[#FBF8F3]"
+      <section class="py-20 bg-[#FBF8F3] text-center px-6 md:px-16">
+        <h2
+          class="text-4xl font-['Playfair_Display'] font-semibold text-[#1B4332] mb-6"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
-          Add your content here — <span class="text-[#D4A017]">Siege</span>
+          What is Rizal Law?
+        </h2>
+        <p
+          class="max-w-3xl mx-auto text-lg text-[#2C2C2C]/80 leading-relaxed mb-12"
+          data-aos="fade-up-right"
+          data-aos-delay="200"
+        >
+          <span class="text-[#1B4332] font-semibold">Republic Act No. 1425</span
+          >, commonly known as the Rizal Law, was enacted on June 12, 1956. This
+          landmark legislation mandates all educational institutions in the
+          Philippines to offer courses about the life, works, and writings of
+          José Rizal, particularly his novels <em>Noli Me Tangere</em> and
+          <em>El Filibusterismo</em>.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div
+            class="bg-white border-l-4 border-[#1B4332] shadow-md rounded-2xl p-6 flex items-center justify-center gap-4 text-left h-[230px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] px-5 py-3 flex items-center justify-center rounded-full shadow-md"
+            >
+              <i class="bx bx-book-reader text-white text-3xl"></i>
+            </div>
+
+            <div class="w-px h-20 bg-[#1B4332]/30"></div>
+            <div>
+              <h3 class="text-xl font-semibold text-[#1B4332] mb-2">
+                Mandatory Study
+              </h3>
+              <p class="text-[#2C2C2C]/80 text-base">
+                All educational institutions in the Philippines must include
+                courses on the life, works, and writings of José Rizal,
+                particularly his novels Noli Me Tangere and El Filibusterismo.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border-l-4 border-[#1B4332] shadow-md rounded-2xl p-6 flex items-center justify-center gap-4 text-left h-[230px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div
+              class="bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] px-5 py-3 flex items-center justify-center rounded-full shadow-md"
+            >
+              <i class="bx bx-library text-white text-3xl"></i>
+            </div>
+
+            <div class="w-px h-20 bg-[#1B4332]/30"></div>
+            <div>
+              <h3 class="text-xl font-semibold text-[#1B4332] mb-2">
+                Educational Purpose
+              </h3>
+              <p class="text-[#2C2C2C]/80 text-base">
+                The law aims to inspire Filipino youth with ideals of freedom,
+                nationalism, and patriotism as exemplified by Rizal's life and
+                sacrifice.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border-l-4 border-[#1B4332] shadow-md rounded-2xl p-6 flex items-center justify-center gap-4 text-left h-[230px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <div
+              class="bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] px-5 py-3 flex items-center justify-center rounded-full shadow-md"
+            >
+              <i class="bx bx-flag text-white text-3xl"></i>
+            </div>
+
+            <div class="w-px h-20 bg-[#1B4332]/30"></div>
+            <div>
+              <h3 class="text-xl font-semibold text-[#1B4332] mb-2">
+                National Identity
+              </h3>
+              <p class="text-[#2C2C2C]/80 text-base">
+                Studying Rizal helps Filipinos understand their history, develop
+                national consciousness, and appreciate the struggles for
+                independence.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border-l-4 border-[#1B4332] shadow-md rounded-2xl p-6 flex items-center justify-center gap-4 text-left h-[230px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <div
+              class="bg-gradient-to-br from-[#1B4332] via-[#2D6A4F] to-[#40916C] px-5 py-3 flex items-center justify-center rounded-full shadow-md"
+            >
+              <i class="bx bx-globe text-white text-3xl"></i>
+            </div>
+
+            <div class="w-px h-20 bg-[#1B4332]/30"></div>
+            <div>
+              <h3 class="text-xl font-semibold text-[#1B4332] mb-2">
+                Global Relevance
+              </h3>
+              <p class="text-[#2C2C2C]/80 text-base">
+                Rizal's advocacy for peaceful reform, education, and human
+                rights remains relevant to contemporary global issues and social
+                justice movements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-[#f5f5f1] text-center px-6 md:px-20">
+        <h2
+          class="text-4xl font-['Playfair_Display'] font-semibold text-[#1B4332] mb-3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Why It Matters
+        </h2>
+
+        <p
+          class="text-[#2C2C2C]/80 mb-12 text-lg max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          The Rizal Law ensures that every Filipino understands the sacrifices
+          made for our freedom and the values that shaped our nation.
+        </p>
+
+        <div
+          class="bg-[#f9f9f7] rounded-2xl shadow-lg max-w-5xl mx-auto p-10 md:p-14 text-[#2C2C2C] leading-relaxed text-lg text-left"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        >
+          <p class="mb-6">
+            The Rizal Law was enacted to rededicate the lives of Filipino youth
+            to the ideals of freedom and nationalism—for which our heroes lived
+            and died. By studying Rizal's life and works, students gain:
+          </p>
+
+          <ul class="list-disc pl-6 space-y-4">
+            <li class="marker:text-[#ffcc33]">
+              <span class="font-semibold text-[#1B4332]"
+                >Historical Understanding:</span
+              >
+              A deeper appreciation of Philippine history and the struggle for
+              independence.
+            </li>
+            <li class="marker:text-[#ffcc33]">
+              <span class="font-semibold text-[#1B4332]">National Pride:</span>
+              A stronger sense of Filipino identity and cultural heritage.
+            </li>
+            <li class="marker:text-[#ffcc33]">
+              <span class="font-semibold text-[#1B4332]"
+                >Critical Thinking:</span
+              >
+              The ability to analyze social issues and advocate for positive
+              change.
+            </li>
+            <li class="marker:text-[#ffcc33]">
+              <span class="font-semibold text-[#1B4332]">Moral Values:</span>
+              Inspiration from Rizal’s integrity, courage, and dedication to his
+              country.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="py-20 bg-[#FBF8F3] text-center px-6 md:px-20">
+        <h2
+          class="text-4xl font-['Playfair_Display'] font-semibold text-[#1B4332] mb-3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Timeline of Impact
+        </h2>
+        <p
+          class="text-[#2C2C2C]/70 mb-12 text-lg"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          From enactment to enduring influence
+        </p>
+
+        <div class="relative max-w-5xl mx-auto px-6">
+          <div
+            class="absolute left-1/2 top-0 bottom-0 w-[3px] bg-[#1B4332] transform -translate-x-1/2"
+          ></div>
+
+          <article
+            class="timeline-item mb-16 flex flex-col md:flex-row items-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="md:w-5/12"></div>
+
+            <div class="w-full md:w-2/12 flex flex-col items-center">
+              <div
+                class="bg-[#FBF8F3] text-[#1B4332] font-semibold border-2 border-[#1B4332] rounded-full w-16 h-16 flex items-center justify-center shadow-md z-10"
+              >
+                1956
+              </div>
+              <div class="w-1 bg-[#1B4332]/20 flex-1 hidden md:block"></div>
+            </div>
+
+            <div class="md:w-5/12 text-left mt-6 md:mt-0">
+              <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h3 class="text-[#1B4332] font-semibold text-xl mb-2">
+                  Republic Act No. 1425 Enacted
+                </h3>
+                <p class="text-[#2C2C2C]/80 leading-relaxed">
+                  Senator Claro M. Recto authored and sponsored the bill that
+                  became known as the Rizal Law, requiring the study of Rizal's
+                  life and works in all schools.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="timeline-item mb-16 flex flex-col md:flex-row items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="md:w-5/12 text-left mt-6 md:mt-0">
+              <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h3 class="text-[#1B4332] font-semibold text-xl mb-2">
+                  Implementation Nationwide
+                </h3>
+                <p class="text-[#2C2C2C]/80 leading-relaxed">
+                  Educational institutions across the Philippines began
+                  implementing Rizal courses as part of their curriculum
+                  requirements.
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full md:w-2/12 flex flex-col items-center">
+              <div
+                class="bg-[#FBF8F3] text-[#1B4332] font-semibold border-2 border-[#1B4332] rounded-full w-16 h-16 flex items-center justify-center shadow-md z-10 text-sm text-center leading-tight"
+              >
+                1960s–1970s
+              </div>
+              <div class="w-1 bg-[#1B4332]/20 flex-1 hidden md:block"></div>
+            </div>
+
+            <div class="md:w-5/12"></div>
+          </article>
+
+          <article
+            class="timeline-item mb-16 flex flex-col md:flex-row items-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="md:w-5/12"></div>
+
+            <div class="w-full md:w-2/12 flex flex-col items-center">
+              <div
+                class="bg-[#FBF8F3] text-[#1B4332] font-semibold border-2 border-[#1B4332] rounded-full w-16 h-16 flex items-center justify-center shadow-md z-10 text-sm text-center leading-tight"
+              >
+                1980s–Present
+              </div>
+              <div class="w-1 bg-[#1B4332]/20 flex-1 hidden md:block"></div>
+            </div>
+
+            <div class="md:w-5/12 text-left mt-6 md:mt-0">
+              <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h3 class="text-[#1B4332] font-semibold text-xl mb-2">
+                  Continued Relevance
+                </h3>
+                <p class="text-[#2C2C2C]/80 leading-relaxed">
+                  The Rizal Law remains in effect, with millions of Filipino
+                  students studying Rizal's works and understanding his vision
+                  for the nation.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="timeline-item flex flex-col md:flex-row items-center"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="md:w-5/12 text-left mt-6 md:mt-0">
+              <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h3 class="text-[#1B4332] font-semibold text-xl mb-2">
+                  Living Legacy
+                </h3>
+                <p class="text-[#2C2C2C]/80 leading-relaxed">
+                  Rizal's ideals continue to inspire movements for social
+                  reform, education, and national development in the Philippines
+                  and beyond.
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full md:w-2/12 flex flex-col items-center">
+              <div
+                class="bg-[#FBF8F3] text-[#1B4332] font-semibold border-2 border-[#1B4332] rounded-full w-16 h-16 flex items-center justify-center shadow-md z-10"
+              >
+                Today
+              </div>
+            </div>
+
+            <div class="md:w-5/12"></div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="influence"
+        class="bg-gradient-to-br from-[#1B4332] to-[#3E8C6B] text-white py-24 px-6 text-center"
+      >
+        <h2
+          class="text-4xl md:text-5xl font-['Playfair_Display'] font-semibold mb-6"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Rizal's Continuing Influence
+        </h2>
+
+        <p
+          class="max-w-4xl mx-auto text-lg md:text-xl leading-relaxed text-gray-100/90 mb-6"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          More than a century after his death, José Rizal's vision of a free,
+          educated, and progressive Philippines continues to inspire. His
+          advocacy for peaceful reform, education as a tool for empowerment, and
+          unwavering love for country remain as relevant today as they were in
+          his time.
+        </p>
+
+        <p
+          class="italic text-gray-200/90 text-lg max-w-3xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          Through the Rizal Law, his legacy lives on in every Filipino student
+          who learns to think critically, love their country, and work towards a
+          better future for all.
         </p>
       </section>
     </main>
@@ -65,7 +404,8 @@
     <!-- include footer -->
     <div data-include="components/footer.html"></div>
 
-    <!-- script -->
     <script src="assets/js/include.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
