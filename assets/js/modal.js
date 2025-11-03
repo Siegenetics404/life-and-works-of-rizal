@@ -1,4 +1,4 @@
-import { cards, familyCards, siblingsCards, extendedFamilyCard, loversCard, foreignCard, mentorCard, alliesCard, oppressorsCard } from "./cards-data.js";
+import { cards, familyCards, siblingsCards, extendedFamilyCard, loversCard, foreignCard, mentorCard, alliesCard, oppressorsCard, movementCard, reformistCard } from "./cards-data.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   // Load modal and card template
@@ -106,6 +106,28 @@ document.addEventListener("DOMContentLoaded", async () => {
       .replaceAll("{src}", card.src)
       .replaceAll("{video}", card.video || "");
     enemies.insertAdjacentHTML("beforeend", cardHTML);
+  });
+
+  const movement = document.getElementById("Movement");
+  movementCard.forEach((card) => {
+    const cardHTML = cardTemplate
+      .replaceAll("{title}", card.title)
+      .replaceAll("{desc}", card.desc)
+      .replaceAll("{short}", card.short)
+      .replaceAll("{src}", card.src)
+      .replaceAll("{video}", card.video || "");
+    movement.insertAdjacentHTML("beforeend", cardHTML);
+  });
+
+  const reformist = document.getElementById("Reformist");
+  reformistCard.forEach((card) => {
+    const cardHTML = cardTemplate
+      .replaceAll("{title}", card.title)
+      .replaceAll("{desc}", card.desc)
+      .replaceAll("{short}", card.short)
+      .replaceAll("{src}", card.src)
+      .replaceAll("{video}", card.video || "");
+    reformist.insertAdjacentHTML("beforeend", cardHTML);
   });
 
   // Initialize modal for all cards
