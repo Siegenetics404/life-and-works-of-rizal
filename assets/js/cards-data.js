@@ -312,7 +312,7 @@ export const mentorCard = [
     title: "Fr. Leoncio Lopez",
     desc: "Parish priest of Calamba; family friend whose intellect and kindness influenced Rizal’s religious outlook.",
     short: "Early Education — A priest who shaped Rizal’s faith.",
-    src: ""
+    src: "assets/gallery/Teachers and Mentors/Early Education/Fr. Leoncio Lopez.png"
   },
   {
     title: "Fr. Jose Bech, SJ",
@@ -348,31 +348,31 @@ export const mentorCard = [
     title: "Romualdo de Jesus",
     desc: "Sculpture teacher who recognized Rizal’s skill in carving and modeling.",
     short: "Ateneo Municipal — Encouraged Rizal’s sculpting talent.",
-    src: "assets/gallery/Teachers and Mentors/Ateneo Municipal/"
+    src: "assets/gallery/Teachers and Mentors/Ateneo Municipal/Romualdo de Jesus.png"
   },
   {
     title: "Dr. Louis de Wecker",
     desc: "Prominent Parisian ophthalmologist under whom Rizal trained in 1885.",
     short: "Europe — Taught Rizal advanced eye surgery in Paris.",
-    src: "assets/gallery/Teachers and Mentors/Europe/"
+    src: "assets/gallery/Teachers and Mentors/Europe/Dr. Louis de Wecker.jpg"
   },
   {
     title: "Dr. Otto Becker",
     desc: "Professor at Heidelberg University; supervised Rizal’s advanced ophthalmology studies.",
     short: "Europe — Guided Rizal’s clinical training in Heidelberg.",
-    src: "assets/gallery/Teachers and Mentors/Europe/"
+    src: "assets/gallery/Teachers and Mentors/Europe/Dr. Otto Becker.png"
   },
   {
     title: "Dr. Karl Ernest Schweigger",
     desc: "Berlin ophthalmologist who allowed Rizal to observe modern clinical methods.",
     short: "Europe — Introduced modern ophthalmology to Rizal in Berlin.",
-    src: "assets/gallery/Teachers and Mentors/Europe/"
+    src: "assets/gallery/Teachers and Mentors/Europe/Dr. Karl Ernest Schweigger.png"
   },
   {
     title: "Dr. Miguel Morayta",
     desc: "Historian and liberal professor at the Universidad Central de Madrid who inspired Rizal’s political thought.",
     short: "Europe — Shaped Rizal’s liberal and reformist ideals in Madrid.",
-    src: "assets/gallery/Teachers and Mentors/Europe/"
+    src: "assets/gallery/Teachers and Mentors/Europe/Dr. Miguel Morayta.png"
   },
   {
     title: "Don Pablo Ortega y Rey",
@@ -510,7 +510,7 @@ export const oppressorsCard = [
     title: "Lt. José Taviel de Andrade",
     desc: "Spanish officer assigned as Rizal’s bodyguard during his stay in the Philippines; later defended his character at trial.",
     short: "Colonial Official — Loyal escort who respected Rizal’s integrity.",
-    src: "assets/gallery/Enemies and Oppressors/Colonial officials/"
+    src: "assets/gallery/Enemies and Oppressors/Colonial officials/Lt. José Taviel de Andrade.png"
   },
   {
     title: "Fr. Antonio Obach",
@@ -540,30 +540,30 @@ export const oppressorsCard = [
     title: "Dominican Order",
     desc: "Powerful land-owning friar order opposed to Rizal’s family and reformist ideals, especially over Calamba disputes.",
     short: "Friar Order — Opposed Rizal’s agrarian reform efforts.",
-    src: ""
+    src: "assets/gallery/Enemies and Oppressors/Friar Orders/Dominican Order.png"
   },
   {
     title: "Augustinian Order",
     desc: "Religious order often aligned with Spanish colonial interests and clerical dominance.",
     short: "Friar Order — Conservative faction allied with colonial rule.",
-    src: ""
+    src: "assets/gallery/Enemies and Oppressors/Friar Orders/Augustinian Order.png"
   },
   {
     title: "Franciscan Order",
     desc: "Religious order engaged in parish administration and missionary work; represented Church conservatism.",
     short: "Friar Order — Parish administrators loyal to colonial Church.",
-    src: ""
+    src: "assets/gallery/Enemies and Oppressors/Friar Orders/Franciscan Order.png"
   },
   {
     title: "Jesuit Order",
     desc: "Rizal’s educators during his youth; later conflicted over his liberal and nationalist writings.",
     short: "Friar Order — Educators torn between faith and reform.",
-    src: ""
+    src: "assets/gallery/Enemies and Oppressors/Friar Orders/Jesuits Order.png"
   },
   {
     title: "Guardia Civil",
     desc: "Spanish colonial police force notorious for abuses against Filipinos and enforcement of oppressive policies.",
     short: "Military Police — Colonial enforcers who harassed civilians.",
-    src: ""
+    src: "assets/gallery/Enemies and Oppressors/Military-Police/Guardia Civil.png"
   }
 ]
