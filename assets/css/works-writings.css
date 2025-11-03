@@ -1,49 +1,60 @@
-/* --- Scroll-in animation --- */
-.fade-in {
+/* Decorative golden line */
+.gold-line {
+  height: 3px;
+  width: 80px;
+  background-color: #d4af37;
+  border-radius: 9999px;
+  margin-top: 1.5rem;
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+  transform: scaleX(0);
 }
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* Fade & rise animation for text lines */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* --- Card Hover (Lift up) --- */
-.card-hover {
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
+/* Slide-in animation for golden line */
+@keyframes lineExpand {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
 
-.card-hover:hover {
-  transform: translateY(-10px);
+/* Fade-up smooth appearance for the quote section */
+.fade-up {
+  animation: fadeUp 1.2s ease-out forwards;
 }
 
-/* Remove background & shadow from images */
-.card-hover img {
-  box-shadow: none !important;
-  background: transparent !important;
-  transition: transform 0.3s ease;
+/* Golden line animation */
+.line-animate {
+  animation: lineExpand 1s ease-out forwards;
 }
 
-/* Text container keeps shadow */
-.card-hover > div {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.3s ease;
+/* Subtle background gradient glow pulse */
+@keyframes bgPulse {
+  0% {
+    background: linear-gradient(180deg, #1b4332 0%, #52b788 100%);
+  }
+  50% {
+    background: linear-gradient(180deg, #194c36 0%, #5cc894 100%);
+  }
+  100% {
+    background: linear-gradient(180deg, #1b4332 0%, #52b788 100%);
+  }
 }
-
-.card-hover:hover > div {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-/* --- Read More button hover glow --- */
-.card-btn {
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 10px rgba(27, 67, 50, 0.15);
-}
-
-.card-btn:hover {
-  background-color: #163827;
-  box-shadow: 0 6px 18px rgba(27, 67, 50, 0.25);
-  transform: translateY(-2px);
+.quote-section {
+  animation: bgPulse 10s ease-in-out infinite alternate;
 }

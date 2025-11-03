@@ -24,26 +24,25 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="/assets/css/works-writings.css" rel="stylesheet" />
   </head>
-  <body class="bg-[#FBF8F3] font-['Lora']">
+
+  <body class="bg-[#FBF8F3] font-[Lora]">
     <!-- include header -->
     <div data-include="components/header.html"></div>
 
-    <!-- main section with header offset -->
     <main class="pt-20 min-h-[calc(100vh-5rem)]">
-      <!-- banner section -->
+      <!-- banner -->
       <section
         class="relative h-[50vh] flex items-center justify-center bg-center bg-cover"
         style="
           background-image: url('assets/imgs/banner/works-and-writings-banner.webp');
         "
       >
-        <!-- black + green overlay -->
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="absolute inset-0 bg-[#1b4332]/40"></div>
 
         <div class="relative text-center text-[#FBF8F3] px-6">
           <h1
-            class="text-5xl md:text-6xl font-['Playfair_Display'] font-semibold mb-3"
+            class="text-5xl md:text-6xl font-[Playfair_Display] font-semibold mb-3"
           >
             Works & Writings
           </h1>
@@ -53,10 +52,12 @@
         </div>
       </section>
 
-      <!-- Content section -->
-      <section class="py-20 text-center text-[#2C2C2C]">
+      <!-- Content -->
+      <section
+        class="bg-gradient-to-b from-[#FBF8F3] via-white to-[#FBF8F3] py-20 text-center text-[#2C2C2C]"
+      >
         <div class="mb-12">
-          <h1 class="text-4xl sm:text-5xl font-bold text-[#2E5339]">
+          <h1 class="text-4xl sm:text-5xl font-bold text-[#1B4332]">
             Major Literary Works
           </h1>
           <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
@@ -66,31 +67,34 @@
           </p>
         </div>
 
-        <div class="max-w-6xl mx-auto py-12 space-y-16">
-          <!-- Noli Me Tangere -->
+        <div class="max-w-6xl mx-auto py-12 space-y-20 px-4">
+          <!--  Noli Me Tangere -->
           <div
-            class="fade-in grid grid-cols-1 md:grid-cols-2 gap-10 items-center card-hover rounded-2xl overflow-hidden"
+            class="fade-target opacity-0 translate-y-8 scale-95 transition-all duration-1000 ease-out grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01]"
           >
-            <div class="overflow-hidden rounded-2xl">
+            <div class="relative overflow-hidden">
               <img
                 src="assets/imgs/works_writings/placeholder-image.jpg"
                 alt="Noli Me Tangere"
-                class="w-full h-80 object-cover transition-transform duration-700"
+                class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
               />
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition"
+              ></div>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-md p-8 text-left">
+            <div class="p-8 text-left">
               <span
                 class="bg-[#D4AF37]/80 text-[#1B4332] text-sm px-3 py-1 rounded-full font-semibold"
               >
                 1887
               </span>
               <h3
-                class="text-3xl font-['Playfair_Display'] font-bold text-[#1B4332] mt-3"
+                class="text-3xl font-[Playfair_Display] font-bold text-[#1B4332] mt-3"
               >
                 Noli Me Tangere
               </h3>
-              <p class="italic text-[#00CC66]/80 mb-4">Touch Me Not</p>
+              <p class="italic text-[#2E5339]/80 mb-4">Touch Me Not</p>
               <p class="text-gray-700 text-sm leading-relaxed">
                 Rizal’s first novel exposed the corruption and abuses of the
                 Spanish colonial government and the Catholic Church in the
@@ -98,7 +102,9 @@
                 Crisostomo Ibarra and his quest for reform.
               </p>
 
-              <div class="bg-[#F3F3F3] p-3 mt-5 rounded-lg">
+              <div
+                class="bg-[#F9F9F9] p-4 mt-5 rounded-lg border border-gray-100"
+              >
                 <h4 class="font-semibold text-[#1B4332] text-sm">Impact</h4>
                 <p class="text-xs text-gray-700 mt-1">
                   This groundbreaking work awakened Filipino nationalism and is
@@ -108,38 +114,41 @@
               </div>
 
               <button
-                class="card-btn mt-6 bg-[#1B4332] text-white px-6 py-2 rounded-full text-sm w-fit"
+                class="card-btn mt-6 bg-[#1B4332] text-white px-6 py-2 rounded-full text-sm w-fit transition-all duration-300 transform hover:-translate-y-1 hover:bg-[#295b45] shadow-md hover:shadow-lg"
+                data-title="Noli Me Tangere"
+                data-subtitle="Touch Me Not"
+                data-description="Rizal’s first novel exposed the corruption and abuses of the Spanish colonial government and the Catholic Church in the Philippines. Written in Spanish, it tells the story of Crisostomo Ibarra and his quest for reform, awakening Filipino nationalism."
               >
                 Read More
               </button>
             </div>
           </div>
 
-          <!-- El Filibusterismo -->
+          <!--  El Filibusterismo -->
           <div
-            class="fade-in grid grid-cols-1 md:grid-cols-2 gap-10 items-center card-hover rounded-2xl overflow-hidden"
+            class="fade-target opacity-0 translate-y-8 scale-95 transition-all duration-1000 ease-out grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01]"
           >
-            <div
-              class="bg-white rounded-2xl shadow-md p-8 text-left order-2 md:order-1"
-            >
+            <div class="order-2 md:order-1 p-8 text-left">
               <span
                 class="bg-[#D4AF37]/80 text-[#1B4332] text-sm px-3 py-1 rounded-full font-semibold"
               >
                 1891
               </span>
               <h3
-                class="text-3xl font-['Playfair_Display'] font-bold text-[#1B4332] mt-3"
+                class="text-3xl font-[Playfair_Display] font-bold text-[#1B4332] mt-3"
               >
                 El Filibusterismo
               </h3>
-              <p class="italic text-[#00CC66]/80 mb-4">The Reign of Greed</p>
+              <p class="italic text-[#2E5339]/80 mb-4">The Reign of Greed</p>
               <p class="text-gray-700 text-sm leading-relaxed">
                 The sequel to Noli Me Tangere presents a darker, more
                 revolutionary tone. It follows Simoun, the alter ego of Ibarra,
                 as he plots revenge against the corrupt Spanish system.
               </p>
 
-              <div class="bg-[#F3F3F3] p-3 mt-5 rounded-lg">
+              <div
+                class="bg-[#F9F9F9] p-4 mt-5 rounded-lg border border-gray-100"
+              >
                 <h4 class="font-semibold text-[#1B4332] text-sm">Impact</h4>
                 <p class="text-xs text-gray-700 mt-1">
                   This novel reflected Rizal’s growing disillusionment with
@@ -149,28 +158,246 @@
               </div>
 
               <button
-                class="card-btn mt-6 bg-[#1B4332] text-white px-6 py-2 rounded-full text-sm w-fit"
+                class="card-btn mt-6 bg-[#1B4332] text-white px-6 py-2 rounded-full text-sm w-fit transition-all duration-300 transform hover:-translate-y-1 hover:bg-[#295b45] shadow-md hover:shadow-lg"
+                data-title="El Filibusterismo"
+                data-subtitle="The Reign of Greed"
+                data-description="The sequel to Noli Me Tangere presents a darker, more revolutionary tone. It follows Simoun, the alter ego of Ibarra, as he plots revenge against the corrupt Spanish system, revealing Rizal’s disillusionment with peaceful reform."
               >
                 Read More
               </button>
             </div>
 
-            <div class="overflow-hidden rounded-2xl order-1 md:order-2">
+            <div class="order-1 md:order-2 relative overflow-hidden">
               <img
                 src="assets/imgs/works_writings/placeholder-image.jpg"
                 alt="El Filibusterismo"
-                class="w-full h-80 object-cover transition-transform duration-700"
+                class="w-full h-80 object-cover transition-transform duration-700 hover:scale-105"
               />
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition"
+              ></div>
+            </div>
+          </div>
+
+          <!--  Mi Último Adiós -->
+          <div
+            class="fade-target opacity-0 translate-y-8 scale-95 transition-all duration-1000 ease-out grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01]"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/imgs/works_writings/placeholder-image.jpg"
+                alt="Mi Último Adiós"
+                class="w-full h-80 object-cover transition-transform duration-700 hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition"
+              ></div>
+            </div>
+
+            <div class="p-8 text-left">
+              <span
+                class="bg-[#D4AF37]/80 text-[#1B4332] text-sm px-3 py-1 rounded-full font-semibold"
+              >
+                1896
+              </span>
+              <h3
+                class="text-3xl font-[Playfair_Display] font-bold text-[#1B4332] mt-3"
+              >
+                Mi Último Adiós
+              </h3>
+              <p class="italic text-[#2E5339]/80 mb-4">My Last Farewell</p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Written on the eve of his execution, this poignant poem is Jose
+                Rizal’s farewell message to his beloved country. It expresses
+                his unwavering love for the Philippines and his hope for its
+                freedom from oppression.
+              </p>
+
+              <div
+                class="bg-[#F9F9F9] p-4 mt-5 rounded-lg border border-gray-100"
+              >
+                <h4 class="font-semibold text-[#1B4332] text-sm">Impact</h4>
+                <p class="text-xs text-gray-700 mt-1">
+                  This masterpiece became a timeless symbol of patriotism and
+                  sacrifice, inspiring countless Filipinos to continue the
+                  struggle for independence.
+                </p>
+              </div>
+
+              <button
+                class="card-btn mt-6 bg-[#1B4332] text-white px-6 py-2 rounded-full text-sm w-fit transition-all duration-300 transform hover:-translate-y-1 hover:bg-[#295b45] shadow-md hover:shadow-lg"
+                data-title="Mi Último Adiós"
+                data-subtitle="My Last Farewell"
+                data-description="Written on the eve of his execution in Fort Santiago, this poem served as Rizal’s final farewell to his countrymen — expressing love, hope, and faith in the Filipino nation."
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <!--  Essays & Letters -->
+          <div
+            class="fade-target opacity-0 translate-y-8 scale-95 transition-all duration-1000 ease-out grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01]"
+          >
+            <div class="order-2 md:order-1 p-8 text-left">
+              <span
+                class="bg-[#D4AF37]/80 text-[#1B4332] text-sm px-3 py-1 rounded-full font-semibold"
+              >
+                Various Years
+              </span>
+              <h3
+                class="text-3xl font-[Playfair_Display] font-bold text-[#1B4332] mt-3"
+              >
+                Essays & Letters
+              </h3>
+              <p class="italic text-[#2E5339]/80 mb-4">
+                Writings of Reflection & Reform
+              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Rizal’s essays and letters cover a wide range of subjects —
+                education, social reform, freedom, and moral responsibility.
+                They reveal his deep intellect and his desire to awaken the
+                consciousness of the Filipino people.
+              </p>
+
+              <div
+                class="bg-[#F9F9F9] p-4 mt-5 rounded-lg border border-gray-100"
+              >
+                <h4 class="font-semibold text-[#1B4332] text-sm">Impact</h4>
+                <p class="text-xs text-gray-700 mt-1">
+                  His writings became instruments of enlightenment, influencing
+                  generations to think critically and stand up against
+                  injustice.
+                </p>
+              </div>
+
+              <button
+                class="card-btn mt-6 bg-[#1B4332] text-white px-6 py-2 rounded-full text-sm w-fit transition-all duration-300 transform hover:-translate-y-1 hover:bg-[#295b45] shadow-md hover:shadow-lg"
+                data-title="Essays & Letters"
+                data-subtitle="Writings of Reflection & Reform"
+                data-description="Rizal’s essays and letters discuss education, freedom, and national identity, encouraging Filipinos to pursue reform and enlightenment."
+              >
+                Read More
+              </button>
+            </div>
+
+            <div class="order-1 md:order-2 relative overflow-hidden">
+              <img
+                src="assets/imgs/works_writings/placeholder-image.jpg"
+                alt="Essays & Letters"
+                class="w-full h-80 object-cover transition-transform duration-700 hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition"
+              ></div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Modal (initially hidden) -->
+    <div
+      id="workModal"
+      class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center pointer-events-none opacity-0 z-50 transition-opacity duration-700 ease-out"
+      aria-hidden="true"
+    >
+      <div
+        id="modalContent"
+        class="relative flex flex-col md:flex-row bg-white rounded-2xl shadow-2xl max-w-5xl w-11/12 overflow-hidden transform scale-90 translate-y-8 opacity-0 transition-all duration-700 ease-out"
+      >
+        <!-- ✖ Close Button (kept rectangular, improved positioning) -->
+        <button
+          id="closeModal"
+          class="absolute top-3 right-3 md:top-5 md:right-5 text-gray-700 text-3xl font-bold hover:text-[#D4AF37] hover:rotate-90 transition-transform duration-300 ease-out z-50"
+          aria-label="Close"
+        >
+          &times;
+        </button>
+
+        <!-- Image Section -->
+        <div
+          id="modalImage"
+          class="w-full md:w-1/2 bg-cover bg-center min-h-[300px] md:min-h-[450px] relative"
+          style="
+            background-image: url('assets/imgs/works_writings/placeholder-image.jpg');
+          "
+        >
+          <!-- Optional gradient overlay for elegance -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"
+          ></div>
+        </div>
+
+        <!-- Text Section -->
+        <div
+          class="modal-text w-full md:w-1/2 p-8 md:p-10 text-left flex flex-col justify-center"
+        >
+          <h3
+            id="modalTitle"
+            class="text-3xl font-[Playfair_Display] font-bold text-[#1B4332] mb-2 border-b border-[#D4AF37]/40 pb-2"
+          ></h3>
+          <p
+            id="modalSubtitle"
+            class="italic text-[#2E5339]/80 mb-4 text-sm"
+          ></p>
+          <p
+            id="modalDescription"
+            class="text-gray-700 text-sm leading-relaxed"
+          ></p>
+
+          <!-- Gold accent line -->
+          <div class="mt-6 h-1 w-20 bg-[#D4AF37]/70 rounded-full"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote Section -->
+    <section
+      id="quote-section"
+      class="quote-section text-center text-white py-24 relative overflow-hidden bg-pulse"
+    >
+      <div class="max-w-3xl mx-auto px-6 relative z-10">
+        <span class="block text-[#D4AF37] text-3xl mb-4 font-serif opacity-0"
+          >"</span
+        >
+
+        <h2
+          class="quote-line text-2xl md:text-3xl font-[Playfair_Display] font-bold mb-4 text-[#F9F9F9] opacity-0"
+        >
+          I wish to show those who deny us patriotism
+        </h2>
+        <h2
+          class="quote-line text-2xl md:text-3xl font-[Playfair_Display] font-bold mb-4 text-[#F9F9F9] opacity-0"
+        >
+          that we know how to die for our duty and our
+        </h2>
+        <h2
+          class="quote-line text-2xl md:text-3xl font-[Playfair_Display] font-bold text-[#F9F9F9] opacity-0"
+        >
+          convictions.
+        </h2>
+
+        <div
+          class="gold-line mx-auto mt-6 opacity-0 h-1 w-20 bg-[#d4af37] rounded-full"
+        ></div>
+
+        <p
+          class="quote-subtext text-[#E8F1ED]/90 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mt-6 opacity-0"
+        >
+          — Dr. Jose Rizal
+        </p>
+      </div>
+
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-40"
+      ></div>
+    </section>
+
     <!-- include footer -->
     <div data-include="components/footer.html"></div>
 
-    <!-- script -->
+    <!-- scripts -->
     <script src="assets/js/include.js"></script>
     <script src="assets/js/works-writings.js"></script>
   </body>
