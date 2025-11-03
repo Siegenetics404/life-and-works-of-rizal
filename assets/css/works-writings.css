@@ -58,3 +58,123 @@
 .quote-section {
   animation: bgPulse 10s ease-in-out infinite alternate;
 }
+
+/* --- Smooth modal entry --- */
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.animate-modal {
+  animation: modalPop 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* --- Slide fade animation for carousel --- */
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.slide-fade {
+  animation: slideFade 0.7s ease-out forwards;
+}
+
+/*  Elegant staggered text fade-up animation */
+@keyframes textFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Work Modal Pop Animation --- */
+@keyframes workModalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.animate-work-modal {
+  animation: workModalPop 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* --- Text Fade Up --- */
+@keyframes smoothFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-fade-up {
+  opacity: 0;
+  animation: smoothFadeUp 0.9s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  will-change: opacity, transform;
+}
+
+/* Staggered delay options for sequencing */
+.delay-1 {
+  animation-delay: 0.1s;
+}
+.delay-2 {
+  animation-delay: 0.25s;
+}
+.delay-3 {
+  animation-delay: 0.4s;
+}
+.delay-4 {
+  animation-delay: 0.6s;
+}
+
+/* Optional: zoom animation for modal image */
+@keyframes modalImageZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+.animate-zoom {
+  animation: modalImageZoom 6s ease-in-out infinite alternate;
+}
+
+/* subtle hover pulse for nav arrows */
+@keyframes pulseBtn {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.carousel-btn:hover {
+  animation: pulseBtn 0.8s ease-in-out infinite;
+}
