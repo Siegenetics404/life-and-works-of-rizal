@@ -119,7 +119,7 @@ document.querySelectorAll(".card-btn[data-id]").forEach((btn) => {
       });
     }, 150);
 
-    document.body.classList.add("overflow-hidden"); // lock background scroll
+    document.body.classList.add("overflow-hidden");
     history.pushState({ modalOpen: true }, "");
   });
 });
@@ -260,9 +260,16 @@ const CAROUSEL_SLIDES = [
   },
 ];
 
+// ---  Carousel with Transitions & Animations Intact ---
+
 let currentSlide = 0;
 let autoPlayTimer = null;
 const SLIDE_INTERVAL = 5000;
+
+// helper: breakpoint check
+function isVerticalMode() {
+  return window.innerWidth < 653;
+}
 
 // Build carousel
 function buildCarousel() {
@@ -271,14 +278,25 @@ function buildCarousel() {
 
   CAROUSEL_SLIDES.forEach((slide, index) => {
     const slideEl = document.createElement("div");
+
+    // all animations and easing intact
     slideEl.className =
-      "min-w-full shrink-0 flex flex-col items-center justify-center text-center px-6 md:px-10 opacity-0 scale-95 transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)]";
+      "w-full flex-none flex flex-col items-center text-center px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-10 opacity-0 scale-95 transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)]";
     slideEl.setAttribute("data-index", index);
+
+    // text sizes
     slideEl.innerHTML = `
-  <h4 class="text-2xl md:text-3xl font-[Playfair_Display] font-bold text-[#1B4332] mb-2 text-fade-up delay-1">${slide.title}</h4>
-  <p class="italic text-[#2E5339]/80 mb-4 text-fade-up delay-2">${slide.subtitle}</p>
-  <p class="text-gray-700 text-sm leading-relaxed max-w-xl text-fade-up delay-3">${slide.content}</p>
-`;
+      <h4 class="poem-title text-fade-up font-[Playfair_Display] font-bold text-[#1B4332] mb-2 break-words leading-tight">
+        ${slide.title}
+      </h4>
+      <p class="poem-subtitle italic text-[#2E5339]/80 mb-3 text-sm sm:text-base md:text-lg text-fade-up leading-snug">
+        ${slide.subtitle}
+      </p>
+      <p class="poem-content text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed max-w-full sm:max-w-md md:max-w-xl text-fade-up px-2">
+        ${slide.content}
+      </p>
+    `;
+
     slidesContainer.appendChild(slideEl);
 
     const dot = document.createElement("button");
@@ -289,12 +307,37 @@ function buildCarousel() {
     dotsContainer.appendChild(dot);
   });
 
+  adaptLayoutForViewport();
   showSlide(0, false);
 }
 
-// Show slide
+// Adjust slides layout
+function adaptLayoutForViewport() {
+  if (isVerticalMode()) {
+    slidesContainer.style.flexDirection = "column";
+    slidesContainer.style.transform = "translateY(0)";
+
+    // Stack all slides absolutely
+    slidesContainer.querySelectorAll("[data-index]").forEach((slide) => {
+      slide.style.position = "absolute";
+      slide.style.top = "0";
+      slide.style.left = "0";
+      slide.style.width = "100%";
+    });
+  } else {
+    slidesContainer.style.flexDirection = "row";
+    slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    // revert to normal flow
+    slidesContainer.querySelectorAll("[data-index]").forEach((slide) => {
+      slide.style.position = "relative";
+    });
+  }
+}
+
+// Show slide with preserved fade & scaling
 function showSlide(index, animate = true) {
-  const slides = slidesContainer.querySelectorAll("[data-index]");
+  const slides = Array.from(slidesContainer.querySelectorAll("[data-index]"));
   const dots = dotsContainer.querySelectorAll("[data-index]");
   const total = slides.length;
 
@@ -305,15 +348,17 @@ function showSlide(index, animate = true) {
       slide.classList.remove("opacity-0", "scale-95");
       slide.classList.add("opacity-100", "scale-100", "slide-fade");
 
-      // Add a short delay before retriggering text animation
+      // retrigger text animations inside
       setTimeout(() => {
-        const texts = slide.querySelectorAll(".text-fade-up");
+        const texts = slide.querySelectorAll(
+          ".text-fade-up, .poem-title, .poem-subtitle, .poem-content"
+        );
         texts.forEach((el) => {
           el.style.animation = "none";
-          el.offsetHeight; // reflow to reset animation
+          el.offsetHeight;
           el.style.animation = "";
         });
-      }, 100);
+      }, 80);
     } else {
       slide.classList.remove("opacity-100", "scale-100", "slide-fade");
       slide.classList.add("opacity-0", "scale-95");
@@ -325,12 +370,16 @@ function showSlide(index, animate = true) {
     dot.classList.toggle("bg-gray-300", i !== currentSlide);
   });
 
-  if (animate) {
+  if (isVerticalMode()) {
+    const activeSlide = slides[currentSlide];
+    slidesContainer.style.height = activeSlide.scrollHeight + "px";
+  } else {
     slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+    slidesContainer.style.height = "auto";
   }
 }
 
-// Slide navigation
+// Navigation
 function nextSlide() {
   showSlide(currentSlide + 1);
 }
@@ -345,7 +394,9 @@ function goToSlide(i) {
 // Auto-play
 function startAutoPlay() {
   stopAutoPlay();
-  autoPlayTimer = setInterval(nextSlide, SLIDE_INTERVAL);
+  autoPlayTimer = setInterval(() => {
+    nextSlide();
+  }, SLIDE_INTERVAL);
 }
 function stopAutoPlay() {
   if (autoPlayTimer) clearInterval(autoPlayTimer);
@@ -354,6 +405,11 @@ function resetTimer() {
   stopAutoPlay();
   startAutoPlay();
 }
+
+// Adjust on resize for live responsiveness
+window.addEventListener("resize", () => {
+  adaptLayoutForViewport();
+});
 
 // Open modal
 openPoemsBtn.addEventListener("click", () => {
@@ -403,3 +459,44 @@ prevBtn.addEventListener("click", () => {
 });
 poemsModalContent.addEventListener("mouseenter", stopAutoPlay);
 poemsModalContent.addEventListener("mouseleave", startAutoPlay);
+
+// --- Tap zones for mobile ---
+const tapLeft = document.getElementById("tapLeft");
+const tapRight = document.getElementById("tapRight");
+
+if (tapLeft && tapRight) {
+  tapLeft.addEventListener("click", () => {
+    prevSlideFn();
+    resetTimer();
+  });
+  tapRight.addEventListener("click", () => {
+    nextSlide();
+    resetTimer();
+  });
+}
+
+// --- Swipe gesture for mobile ---
+let touchStartX = 0;
+let touchEndX = 0;
+
+slidesContainer.addEventListener("touchstart", (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+slidesContainer.addEventListener("touchend", (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const diff = touchStartX - touchEndX;
+  if (Math.abs(diff) < 40) return; // ignore small movements
+  if (diff > 0) {
+    // swipe left → next slide
+    nextSlide();
+  } else {
+    // swipe right → previous slide
+    prevSlideFn();
+  }
+  resetTimer();
+}

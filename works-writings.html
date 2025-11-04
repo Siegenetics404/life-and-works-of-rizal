@@ -56,11 +56,15 @@
       <section
         class="bg-gradient-to-b from-[#FBF8F3] via-white to-[#FBF8F3] py-20 text-center text-[#2C2C2C]"
       >
-        <div class="mb-12">
-          <h1 class="text-4xl sm:text-5xl font-bold text-[#1B4332]">
+        <div class="mb-12 text-center overflow-hidden">
+          <h1
+            class="text-4xl sm:text-5xl font-bold text-[#1B4332] animate-luxury-rise"
+          >
             Major Literary Works
           </h1>
-          <p class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+          <p
+            class="mt-3 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto animate-soft-reveal"
+          >
             Rizal's writings were powerful weapons against colonial oppression.
             Through his novels, poems, and letters, he exposed injustices and
             inspired Filipinos to fight for their rights and dignity.
@@ -340,56 +344,77 @@
     <!-- Poems & Letters Modal -->
     <div
       id="poemsModal"
-      class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center pointer-events-none opacity-0 z-50 transition-opacity duration-700 ease-out"
+      class="fixed inset-0 z-50 grid place-items-center bg-black/70 backdrop-blur-sm pointer-events-none opacity-0 transition-opacity duration-300 ease-out"
       aria-hidden="true"
     >
       <div
         id="poemsModalContent"
-        class="relative w-11/12 max-w-3xl bg-white/95 rounded-2xl shadow-2xl overflow-hidden transform scale-90 translate-y-8 opacity-0 transition-all duration-700 ease-out"
+        class="w-[95%] sm:w-11/12 md:w-4/5 max-w-3xl bg-white/95 rounded-2xl shadow-2xl transition-transform duration-300 ease-out max-h-[90vh] flex flex-col overflow-hidden"
+        role="dialog"
+        aria-modal="true"
       >
-        <!-- Close -->
-        <button
-          id="closePoemsBtn"
-          class="absolute top-3 right-3 text-gray-600 text-3xl font-bold hover:text-[#D4AF37] hover:rotate-90 transition-transform duration-300 ease-out z-50"
-          aria-label="Close"
-        >
-          &times;
-        </button>
+        <!-- inner content -->
+        <div class="p-4 sm:p-6 md:p-10 text-center relative">
+          <!-- close button -->
+          <button
+            id="closePoemsBtn"
+            class="absolute top-3 right-3 text-gray-600 text-3xl font-bold hover:text-[#D4AF37] transition-transform duration-200 z-50"
+            aria-label="Close"
+          >
+            &times;
+          </button>
 
-        <div class="p-8 md:p-10 text-center">
+          <!-- heading -->
           <h3
-            class="text-3xl font-[Playfair_Display] font-bold text-[#1B4332] mb-2"
+            class="text-xl sm:text-2xl md:text-3xl font-[Playfair_Display] font-bold text-[#1B4332] mb-2 leading-tight"
           >
             Poems &amp; Letters
           </h3>
-          <p class="text-sm italic text-[#2E5339]/80 mb-8">
+          <p
+            class="text-[0.7rem] sm:text-xs md:text-sm italic text-[#2E5339]/80 mb-4 sm:mb-6 md:mb-8"
+          >
             A collection of Rizal's poems and important letters.
           </p>
 
           <!-- Carousel viewport -->
-          <div id="carousel" class="relative overflow-hidden rounded-xl">
+          <div
+            id="carousel"
+            class="relative rounded-xl overflow-hidden max-h-[70vh]"
+          >
             <div
               id="slides"
-              class="relative h-72 flex transition-transform duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)]"
+              class="relative flex sm:flex-row flex-col transition-transform duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)]"
             ></div>
 
             <!-- Arrows -->
             <button
               id="prevSlide"
-              class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 text-[#1B4332] rounded-full p-2 shadow hover:bg-[#1B4332] hover:text-white transition"
+              class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 bg-white/90 text-[#1B4332] rounded-full p-1.5 sm:p-2 shadow hidden sm:inline-flex"
             >
-              <i class="bx bx-chevron-left text-2xl"></i>
+              <i class="bx bx-chevron-left text-lg sm:text-xl md:text-2xl"></i>
             </button>
             <button
               id="nextSlide"
-              class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 text-[#1B4332] rounded-full p-2 shadow hover:bg-[#1B4332] hover:text-white transition"
+              class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 bg-white/90 text-[#1B4332] rounded-full p-1.5 sm:p-2 shadow hidden sm:inline-flex"
             >
-              <i class="bx bx-chevron-right text-2xl"></i>
+              <i class="bx bx-chevron-right text-lg sm:text-xl md:text-2xl"></i>
             </button>
+
+            <div
+              id="tapLeft"
+              class="absolute inset-y-0 left-0 w-1/2 sm:hidden"
+            ></div>
+            <div
+              id="tapRight"
+              class="absolute inset-y-0 right-0 w-1/2 sm:hidden"
+            ></div>
           </div>
 
           <!-- Dots -->
-          <div id="carouselDots" class="mt-6 flex justify-center gap-2"></div>
+          <div
+            id="carouselDots"
+            class="mt-3 sm:mt-5 md:mt-6 flex justify-center gap-2 flex-wrap"
+          ></div>
         </div>
       </div>
     </div>

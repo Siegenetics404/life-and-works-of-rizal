@@ -1,3 +1,63 @@
+/* reveal */
+@keyframes luxuryRise {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    letter-spacing: 0.05em;
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    letter-spacing: normal;
+  }
+}
+
+.animate-luxury-rise {
+  opacity: 0;
+  animation: luxuryRise 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity, letter-spacing;
+}
+
+/* --- Smooth paragraph fade-up --- */
+@keyframes softReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-soft-reveal {
+  opacity: 0;
+  animation: softReveal 1.8s ease-out 0.6s forwards;
+  will-change: opacity, transform, filter;
+}
+
+/* Subtle rise animation for paragraph */
+@keyframes subtleRise {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-subtle-rise {
+  opacity: 0;
+  animation: subtleRise 1.4s ease-out 0.8s forwards;
+}
 /* Decorative golden line */
 .gold-line {
   height: 3px;
@@ -152,7 +212,7 @@
   animation-delay: 0.6s;
 }
 
-/* Optional: zoom animation for modal image */
+/* zoom animation for modal image */
 @keyframes modalImageZoom {
   from {
     transform: scale(1);
@@ -177,4 +237,17 @@
 }
 .carousel-btn:hover {
   animation: pulseBtn 0.8s ease-in-out infinite;
+}
+
+/* fluid text (keeps everything proportional) */
+@layer utilities {
+  .poem-title {
+    font-size: clamp(1.2rem, 3vw + 0.4rem, 1.8rem);
+  }
+  .poem-subtitle {
+    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.3rem);
+  }
+  .poem-content {
+    font-size: clamp(0.75rem, 1.5vw + 0.2rem, 1rem);
+  }
 }
