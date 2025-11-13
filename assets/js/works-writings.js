@@ -43,7 +43,7 @@ const WORK_CONTENT = {
       <h4 class="font-semibold text-[#1B4332] text-base mt-3 mb-1">First Recipients</h4>
       <p>Sent to friends like Ferdinand Blumentritt and reformists—sparking nationalist discussions that fueled reform movements.</p>
     `,
-    image: "assets/imgs/works_writings/placeholder-image.jpg",
+    image: "assets/imgs/works_writings/noli me tangere.jpg",
   },
   fili: {
     title: "El Filibusterismo",
@@ -61,12 +61,12 @@ const WORK_CONTENT = {
       <h4 class="font-semibold text-[#1B4332] text-base mt-3 mb-1">Dedication & Recipients</h4>
       <p>Dedicated to GOMBURZA—Fathers Gómez, Burgos & Zamora—and sent to friends like Blumentritt and Ventura who praised its emotional depth.</p>
     `,
-    image: "assets/imgs/works_writings/placeholder-image.jpg",
+    image: "assets/imgs/works_writings/el filibusterismo.jpg",
   },
   makamisa: {
     title: "Makamisa",
     subtitle: "Rizal’s Unfinished Novel",
-    image: "assets/imgs/works_writings/placeholder-image.jpg",
+    image: "assets/imgs/works_writings/makamisa.jpg",
     description: `
       <h4 class="font-semibold text-[#1B4332]">Background</h4>
       <p><em>Makamisa</em> was intended to be a follow-up to <em>El Filibusterismo</em>. Written in Tagalog, it offered a lighter, more humorous depiction of Filipino society compared to Rizal’s earlier works.</p>
