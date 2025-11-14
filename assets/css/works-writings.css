@@ -1,49 +1,253 @@
-/* --- Scroll-in animation --- */
-.fade-in {
+/* reveal */
+@keyframes luxuryRise {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    letter-spacing: 0.05em;
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    letter-spacing: normal;
+  }
+}
+
+.animate-luxury-rise {
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+  animation: luxuryRise 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity, letter-spacing;
 }
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* --- Smooth paragraph fade-up --- */
+@keyframes softReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-/* --- Card Hover (Lift up) --- */
-.card-hover {
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
+.animate-soft-reveal {
+  opacity: 0;
+  animation: softReveal 1.8s ease-out 0.6s forwards;
+  will-change: opacity, transform, filter;
 }
 
-.card-hover:hover {
-  transform: translateY(-10px);
+/* Subtle rise animation for paragraph */
+@keyframes subtleRise {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-subtle-rise {
+  opacity: 0;
+  animation: subtleRise 1.4s ease-out 0.8s forwards;
+}
+/* Decorative golden line */
+.gold-line {
+  height: 3px;
+  width: 80px;
+  background-color: #d4af37;
+  border-radius: 9999px;
+  margin-top: 1.5rem;
+  opacity: 0;
+  transform: scaleX(0);
 }
 
-/* Remove background & shadow from images */
-.card-hover img {
-  box-shadow: none !important;
-  background: transparent !important;
-  transition: transform 0.3s ease;
+/* Fade & rise animation for text lines */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Text container keeps shadow */
-.card-hover > div {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.3s ease;
+/* Slide-in animation for golden line */
+@keyframes lineExpand {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
 
-.card-hover:hover > div {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+/* Fade-up smooth appearance for the quote section */
+.fade-up {
+  animation: fadeUp 1.2s ease-out forwards;
 }
 
-/* --- Read More button hover glow --- */
-.card-btn {
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 10px rgba(27, 67, 50, 0.15);
+/* Golden line animation */
+.line-animate {
+  animation: lineExpand 1s ease-out forwards;
 }
 
-.card-btn:hover {
-  background-color: #163827;
-  box-shadow: 0 6px 18px rgba(27, 67, 50, 0.25);
-  transform: translateY(-2px);
+/* Subtle background gradient glow pulse */
+@keyframes bgPulse {
+  0% {
+    background: linear-gradient(180deg, #1b4332 0%, #52b788 100%);
+  }
+  50% {
+    background: linear-gradient(180deg, #194c36 0%, #5cc894 100%);
+  }
+  100% {
+    background: linear-gradient(180deg, #1b4332 0%, #52b788 100%);
+  }
+}
+.quote-section {
+  animation: bgPulse 10s ease-in-out infinite alternate;
+}
+
+/* --- Smooth modal entry --- */
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.animate-modal {
+  animation: modalPop 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* --- Slide fade animation for carousel --- */
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.slide-fade {
+  animation: slideFade 0.7s ease-out forwards;
+}
+
+/*  Elegant staggered text fade-up animation */
+@keyframes textFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Work Modal Pop Animation --- */
+@keyframes workModalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.animate-work-modal {
+  animation: workModalPop 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* --- Text Fade Up --- */
+@keyframes smoothFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-fade-up {
+  opacity: 0;
+  animation: smoothFadeUp 0.9s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  will-change: opacity, transform;
+}
+
+/* Staggered delay options for sequencing */
+.delay-1 {
+  animation-delay: 0.1s;
+}
+.delay-2 {
+  animation-delay: 0.25s;
+}
+.delay-3 {
+  animation-delay: 0.4s;
+}
+.delay-4 {
+  animation-delay: 0.6s;
+}
+
+/* zoom animation for modal image */
+@keyframes modalImageZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+.animate-zoom {
+  animation: modalImageZoom 6s ease-in-out infinite alternate;
+}
+
+/* subtle hover pulse for nav arrows */
+@keyframes pulseBtn {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.carousel-btn:hover {
+  animation: pulseBtn 0.8s ease-in-out infinite;
+}
+
+/* fluid text (keeps everything proportional) */
+@layer utilities {
+  .poem-title {
+    font-size: clamp(1.2rem, 3vw + 0.4rem, 1.8rem);
+  }
+  .poem-subtitle {
+    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.3rem);
+  }
+  .poem-content {
+    font-size: clamp(0.75rem, 1.5vw + 0.2rem, 1rem);
+  }
 }
