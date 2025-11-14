@@ -261,7 +261,7 @@ export const foreignCard = [
     title: "Dr. Karl Ullmer",
     desc: "Protestant pastor from Heidelberg who hosted Rizal and became one of his lifelong friends.",
     short: "The pastor and lifelong friend.",
-    src: "assets/gallery/FOREIGN ENCOUNTERS & SCHOLARS/",
+    src: "assets/gallery/no available.jpg",
   },
   {
     title: "Dr. Adolph B. Meyer",
@@ -306,7 +306,7 @@ export const mentorCard = [
     title: "Juancho Carrera",
     desc: "Artist and father-in-law of Maestro Cruz; taught young Rizal the fundamentals of drawing.",
     short: "Early Education — Rizal’s first art instructor.",
-    src: "assets/gallery/Teachers and Mentors/Early Education/"
+    src: "assets/gallery/no available.jpg"
   },
   {
     title: "Fr. Leoncio Lopez",
@@ -378,7 +378,7 @@ export const mentorCard = [
     title: "Don Pablo Ortega y Rey",
     desc: "Spanish liberal and father of Consuelo Ortiga; provided Rizal friendship and guidance in Madrid society.",
     short: "Europe — A mentor and friend during his stay in Madrid.",
-    src: "assets/gallery/Teachers and Mentors/Europe/"
+    src: "assets/gallery/no available.jpg"
   }
 ]
 
@@ -483,7 +483,7 @@ export const alliesCard = [
     title: "Basilio Teodoro Moran",
     desc: "Publisher in Barcelona who helped print nationalist literature.",
     short: "Spain — Publisher of reformist materials.",
-    src: "assets/gallery/Friends and Allies/"
+    src: "assets/gallery/no available.jpg"
   }
 ]
 
@@ -565,5 +565,137 @@ export const oppressorsCard = [
     desc: "Spanish colonial police force notorious for abuses against Filipinos and enforcement of oppressive policies.",
     short: "Military Police — Colonial enforcers who harassed civilians.",
     src: "assets/gallery/Enemies and Oppressors/Military-Police/Guardia Civil.png"
+  }
+]
+
+export const movementCard = [
+  {
+    title: "Propaganda Movement (1872–1892)",
+    desc: "Reformist campaign of Filipino intellectuals in Spain seeking equality under Spanish law.",
+    short: "Movement — Filipino reformist campaign in Spain for equality under the law.",
+    src: "/assets/gallery/Movements/Propaganda Movement.png"
+  },
+  {
+    title: "La Solidaridad (1889–1895)",
+    desc: "Newspaper and voice of the Propaganda Movement advocating political reforms.",
+    short: "Publication — Propaganda Movement’s voice for political reform.",
+    src: "/assets/gallery/Movements/La Solidaridad.png"
+  },
+  {
+    title: "Circulo Hispano-Filipino",
+    desc: "Madrid-based association discussing Philippine affairs with Spanish liberals.",
+    short: "Association — Forum for Filipinos and Spanish liberals in Madrid.",
+    src: "/assets/gallery/Movements/Circulo Hispano-Filipino.png"
+  },
+  {
+    title: "La Liga Filipina (1892)",
+    desc: "Civic organization founded by Rizal promoting education, unity, and peaceful reform.",
+    short: "Organization — Rizal’s civic group promoting reform and education.",
+    src: "/assets/gallery/Movements/La Liga Filipina.png"
+  },
+  {
+    title: "Katipunan (K.K.K.)",
+    desc: "Secret revolutionary society inspired by Rizal’s martyrdom.",
+    short: "Revolutionary Society — Founded to fight for independence.",
+    src: "/assets/gallery/Movements/Katipunan.png"
+  },
+  {
+    title: "Jesuit Order (Society of Jesus)",
+    desc: "Religious educators who shaped Rizal’s early formation.",
+    short: "Religious Order — Jesuit mentors who influenced Rizal’s youth.",
+    src: "/assets/gallery/Movements/Jesuit Order.jpg"
+  },
+  {
+    title: "Dominican Order",
+    desc: "Friars controlling Calamba estates; symbols of colonial authority.",
+    short: "Religious Order — Landholding friars central to Rizal’s conflicts.",
+    src: "/assets/gallery/Enemies and Oppressors/Friar Orders/Dominican Order.png"
+  },
+  {
+    title: "Spanish Colonial Government",
+    desc: "Regime under which Rizal fought for reform and enlightenment.",
+    short: "Colonial Regime — Government Rizal sought to reform.",
+    src: "/assets/gallery/Movements/Spanish Colonial Government.png"
+  },
+  {
+    title: "Guardia Civil",
+    desc: "Military police enforcing colonial rule and discipline.",
+    short: "Colonial Force — Enforcers of Spanish rule in the Philippines.",
+    src: "/assets/gallery/Enemies and Oppressors/Military-Police/Guardia Civil.png"
+  },
+  {
+    title: "Marian Congregation (Ateneo)",
+    desc: "Student religious society that strengthened Rizal’s moral foundations.",
+    short: "Religious Society — Deepened Rizal’s spiritual discipline.",
+    src: "/assets/gallery/Movements/Marian Congregation.png"
+  },
+  {
+    title: "Academy of Spanish Literature (Ateneo)",
+    desc: "Institution that honed Rizal’s literary skills.",
+    short: "Academic Society — Developed Rizal’s literary talent.",
+    src: "/assets/gallery/Movements/Academy of Spanish Literature.jpg"
+  },
+  {
+    title: "Academy of Natural Sciences (Ateneo)",
+    desc: "Organization fostering his interest in science.",
+    short: "Academic Society — Nurtured Rizal’s scientific curiosity.",
+    src: "/assets/gallery/no available.jpg"
+  },
+  {
+    title: "Acacia Masonic Lodge (Madrid)",
+    desc: "Lodge that initiated Rizal into Freemasonry.",
+    short: "Masonic Lodge — Initiated Rizal into Freemasonry.",
+    src: "/assets/gallery/no available.jpg"
+  },
+  {
+    title: "Lodge Solidaridad (Masonic)",
+    desc: "Masonic lodge of Filipino expatriates in Spain.",
+    short: "Masonic Lodge — Filipinos’ Masonic brotherhood in Spain.",
+    src: "/assets/gallery/Movements/Lodge Solidaridad.png"
+  },
+  {
+    title: "Le Grand Orient de France",
+    desc: "French Masonic organization Rizal was affiliated with.",
+    short: "Masonic Organization — Rizal’s French Masonic connection.",
+    src: "/assets/gallery/Movements/La Granad.jpg"
+  },
+  {
+    title: "Tourists’ Club (Leitmeritz)",
+    desc: "Cultural society visited by Rizal and Blumentritt in Austria.",
+    short: "Cultural Society — Visited by Rizal and Blumentritt in Austria.",
+    src: "/assets/gallery/Movements/Leitmeritz.jpg"
+  },
+  {
+    title: "Anthropological, Ethnological & Geographical Societies of Berlin",
+    desc: "Learned institutions where Rizal presented scientific findings.",
+    short: "Scientific Societies — Where Rizal shared his research in Berlin.",
+    src: "/assets/gallery/Movements/musium.jpg"
+  }
+]
+
+export const reformistCard = [
+  {
+    title: "Apolinario Mabini",
+    desc: "Intellectual known as the “Brains of the Revolution”; admired Rizal’s rational nationalism.",
+    short: "Revolutionary Thinker — The “Brains of the Revolution” who admired Rizal’s ideals.",
+    src: "/assets/gallery/Reformist/Apolinario Mabini.png"
+  },
+  {
+    title: "Andres Bonifacio",
+    desc: "Founder of the Katipunan who revered Rizal as inspiration for revolution.",
+    short: "Revolutionary Leader — Katipunan founder inspired by Rizal’s patriotism.",
+    src: "/assets/gallery/Reformist/Andres Bonifacio.png"
+  },
+  {
+    title: "Ambrosio Salvador",
+    desc: "Reformist and early member of La Liga Filipina.",
+    short: "Reformist — Early La Liga Filipina member supporting Rizal’s reforms.",
+    src: "/assets/gallery/Reformist/Ambrosio Salvador.jpg"
+  },
+  {
+    title: "Pedro Serrano Laktaw",
+    desc: "Mason and civic leader promoting Rizal’s ideals of enlightenment and unity.",
+    short: "Civic Leader — Mason who advanced Rizal’s principles of unity and progress.",
+    src: "/assets/gallery/Reformist/pedro serrano laktaw.PNG"
   }
 ]
